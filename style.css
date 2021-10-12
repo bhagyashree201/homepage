@@ -1,0 +1,111 @@
+body{
+    margin:0;
+    overflow-x:hidden;
+}
+.navbar{
+    position:fixed;
+    top:0;
+    background-color: darkslategray;
+    color:aliceblue;
+    width:100%;
+    height:12%;
+    justify-content: center ;
+    vertical-align: middle;
+    padding-top:2.5%;
+
+}
+.navbar a{
+    color:antiquewhite;
+    text-decoration: none;
+    font-size: xx-large;
+    padding:3%;
+    vertical-align: middle;
+
+}
+nav a:hover{
+    background-color: #ddd;
+    color: black;
+
+}
+.navbar nav{
+    float:right;
+    display:inline;
+    width:75%;
+    text-align: right;
+
+}
+.logo{
+    display: inline;
+    width:25%;
+    
+}
+main{
+    margin-top:10%;
+    width: 100%;
+    text-align: center;
+}
+.leader a{
+    display:block;
+    width:10%;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    border:solid black 3px;
+    border-radius: 2px;
+    font-size: x-large;
+    color:black;
+    margin-bottom: 2.5%;;
+}
+.about{
+    display:flex;
+    justify-content: space-between;
+    border:gray solid 1px;
+    border-radius: 1px;
+
+}
+.box{
+    width:50%;
+    margin:2.5%;
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    border-bottom:gray solid 1px;
+    font-size: larger;
+
+}
+.block{
+    margin:4%;
+    padding:1.5%;
+}
+.table-container{
+    border-bottom:gray solid 1px;
+    text-align: center;
+}
+.certificates{
+
+    display:flex;
+    justify-content: space-between;
+   
+    font-size: larger;
+}
+
+.table{
+    margin:2.5%;
+    display:inline-block;
+    border:black solid 2px;
+    border-radius:2px;
+
+}
+
+.footer{
+    background-color: darkslategray;
+    color:antiquewhite;
+    padding:2%;
+
+}
+.footer a{
+    color:antiquewhite;
+    text-decoration: none;
+}
