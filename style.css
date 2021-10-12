@@ -75,6 +75,9 @@ main{
     font-size: larger;
 
 }
+.separator{
+           padding-top: 1.5%;
+}
 .block{
     margin:4%;
     padding:1.5%;
