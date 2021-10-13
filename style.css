@@ -117,3 +117,33 @@ main{
     float:right;
     
 }
+.table{
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZioAW4QXDf5W0FdlYAVR7fDQ_YU87xnYkw&usqp=CAU");
+}
+.list-unstyled{
+    transform: translatey(400px);
+    opacity: 0;
+}
+.table:hover .list-unstyled{
+transform: translateY(0px);
+transition: 0.8s;
+opacity: 1;
+}
+.table:hover {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZioAW4QXDf5W0FdlYAVR7fDQ_YU87xnYkw&usqp=CAU");
+     background-size: 120% 120%;
+     background-repeat: no-repeat;
+     transition: 0.8s;
+}
+.table:hover h2{
+    color: white;
+    transition: 1s;
+}
+
+.table:hover h4{
+    color: white;
+    transition: 1s;
+}
