@@ -2,6 +2,7 @@ body{
     margin:0;
     overflow-x:hidden;
     background-image:linear-gradient(to bottom right,#02353C,#2EAF7D,#C1F6ED);
+    scroll-behavior: smooth;
     
 }
 .navbar{
@@ -51,18 +52,15 @@ main{
 .leader{
     padding-top: 2%;
     background:url("img2.jpg");
-    animation: example 20s;
+    animation: example 20s ease-out;
     background-size:cover;
     background-repeat:repeat-x;
     
 }
-.leader::before{
-    background:url("img2.jpg");
-    opacity:0.5;
-}
+
 @keyframes example{
     0%{background-position: 0 0;}
-    100%{background-position: -2122px 0;}
+    100%{background-position: -2525px 0;}
 }
 .leader a{
     display:block;
@@ -70,25 +68,32 @@ main{
     margin:10%;
     text-align: center;
     text-decoration: none;
-    border:solid brown 6px;
+    border:solid darkgreen 6px;
     border-radius: 10px;
     font-size: x-large;
     margin-bottom: 2.5%;
-    color:brown;
-    background-color: grey;
+    color:darkgreen;
+    background-color: #ddd;
     float:right;
+    box-shadow: 0 6px #999;
 
 }
+.leader a:active {
+    
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }
 .about{
     display:flex;
     justify-content: space-between;
-    border:black solid 1px;
-    border-radius: 1px;
+    width:90%;
+    margin: auto;
 
 }
 .box{
-    width:50%;
+    width:40%;
     margin:2.5%;
+    margin-top:5%;
 }
 
 .container{
@@ -99,7 +104,8 @@ main{
 
 }
 .separator{
-           padding-top: 1.5%;
+           padding-top: 1%;
+           
 }
 .block{
     margin:4%;
@@ -176,3 +182,20 @@ opacity: 1;
     transition: 1s;
 }
 
+#back-to-top{
+    display:none;
+    text-decoration: none;
+  position: fixed;
+  bottom: 7.5vh;
+  right: 2.5vw;
+  float:right;
+    width:5%;
+    height:5%;
+  z-index:100;
+  font-size: larger;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}

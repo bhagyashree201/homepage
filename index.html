@@ -8,8 +8,10 @@
         <link href="assets/img/logomega.ico" rel="shotcut icon">
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
     </head>
-    <body>
+    <body >
+        <a href="#" onclick="topFunction()" id="back-to-top"><img src="arrow.png" alt="UP" height="40" width="75"></a>
         <div class="navbar">
         <div class="logo">
             <a href=""><img src="Megalith-Logo.jpeg" height="25" weight="25"><span> Megalith</span>2022</a>
@@ -32,12 +34,12 @@
 
             <div class="about">
                 <div class="box">
-                <video height="250" width="400" autoplay loop >
+                <video height="350vh" width="550vw" autoplay loop style="border-radius: 75px;" >
                     <source src="pexels-rodnae-productions-8293501.mp4" type="video/mp4"  >
                 </video>
                 </div>
                 <div class="box">
-                <h2><span>ABOUT </span>US </h2>
+                <h2><strong><span>ABOUT </span>US </strong></h2>
                 <p style="font-size:1.45rem; ">Join as a College Representative for Megalith, IIT Kharagpur and be a part of the new and varied experiences that follow! Grab a unique opportunity to enhance your skills in the fields of publicity, marketing, networking, and maintaining public relations at a national level by acting as the College Representative for your college.
                 </p>
                  </div>
@@ -175,11 +177,35 @@
                     </div>
                     </div>
             </div>
+
             
+            
+            <script>
+                
+                var mybutton = document.getElementById("back-to-top");
+                
+                
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if ( document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+                
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                  
+                  document.documentElement.scrollTop = 0;
+                }
+                </script> 
 
         </main>
         <footer class="footer">
             <div class="container">
+                
               <div class="row">
         
                 <div class="col-md-12 col-lg-6">
@@ -194,7 +220,7 @@
                        <div class="footer-icons">
                         <p>~:Connect with us:~</p>
                         <a href="http://www.facebook.com/ishwar.kashyap.1253236" target="_blank"><img src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" height=100px width=150px></a>
-                        <a href="https://www.instagram.com/__ishwar__4230/?hl=en" target="_blank"><img src="https://i.pinimg.com/originals/4b/4e/13/4b4e1359b5132766e458611a8ee4cda3.jpg" height=100px width=100px></a>
+                        <a href="https://www.instagram.com/__ishwar__4230/?hl=en" target="_blank"><img src="https://i.pinimg.com/originals/4b/4e/13/4b4e1359b5132766e458611a8ee4cda3.jpg" height=100px width=100px style="border-radius:25px ;"></a>
                         <br /><br />
                        </div>
         
