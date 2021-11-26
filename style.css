@@ -62,7 +62,7 @@ main{
     0%{background-position: 0 0;}
     100%{background-position: -2525px 0;}
 }
-.leader a{
+.btn-get-started {
     display:block;
     width:10%;
     margin:10%;
@@ -88,6 +88,9 @@ main{
     justify-content: space-between;
     width:90%;
     margin: auto;
+    margin-top:5%;
+    background-color: #ddd;
+    border-radius:10px;
 
 }
 .box{
@@ -198,4 +201,75 @@ opacity: 1;
   cursor: pointer;
   padding: 10px;
   border-radius: 4px;
+}
+
+@media screen and (max-width:600px){
+    
+    .navbar{
+
+        padding-top:3%;
+        padding-bottom:2%;
+    }
+    .navbar nav{
+        float:none;
+        display:none;
+        width:100%;
+        padding:0;
+        margin:0;
+        text-align:center;
+        
+        
+    }
+    .navbar nav a{
+        padding:0;
+    }
+    
+    main{
+        margin-top:10%;
+    }
+    .logo{text-align: center;
+        margin:0;
+        width:100%;}
+    .logo a{
+        font-size: xx-large;
+    }
+    .btn-get-started {
+        
+        width:30%;
+        margin:auto;
+        float:none;
+        
+    }
+    .about{
+        flex-direction:column;
+        text-align:center;
+        margin-top:10%;
+    }
+    .about video{
+        height:75%;
+        width:100%;
+    }
+    .box{
+        width:90%;
+    }
+    .container{
+        flex-direction:column;
+    }
+    .certificates{
+        flex-direction: column;
+    }
+    .table{
+        margin:10%;
+        margin-bottom: 5%;
+    }
+    #back-to-top{
+        bottom: 5vh;
+        right: 9vw;
+    }
+      
+       
+     
+     
+      
+    
 }
