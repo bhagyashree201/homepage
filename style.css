@@ -113,6 +113,9 @@ main{
 .block{
     margin:4%;
     padding:1.5%;
+    background-color:aliceblue;
+    border:#02353C solid 2px;
+    border-radius:3px;
 }
 .block:hover{
     border:solid 2px rgb(48, 42, 42);
@@ -202,6 +205,43 @@ opacity: 1;
   padding: 10px;
   border-radius: 4px;
 }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 4px;
+    border-radius:50%;
+  }
+  .fa:hover{
+      transform:scale(110%);
+  }
+      
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+    background:#ea4c89;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  
+
 
 @media screen and (max-width:600px){
     
