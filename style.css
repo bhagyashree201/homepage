@@ -220,16 +220,16 @@ opacity: 1;
 }
 
   .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
     text-align: center;
     text-decoration: none;
     margin: 5px 4px;
     border-radius:50%;
   }
   .fa:hover{
-      transform:scale(110%);
+      transform:scale(120%);
   }
       
   .fa-facebook {
