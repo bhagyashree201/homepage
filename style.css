@@ -1,7 +1,7 @@
 body{
     margin:0;
     overflow-x:hidden;
-   background-image:linear-gradient(to bottom right,#02353C,#2EAF7D,#C1F6ED);
+   background-image:linear-gradient(to bottom right,#e6caca,#90c3af,#Cadad7);
    
     background-attachment: fixed;
     scroll-behavior: smooth;
@@ -70,7 +70,7 @@ main{
     
 }
 
-.leader h1,h2{
+.leader h1,.leader h2{
     width:50%;
     margin:auto;
     background: -webkit-linear-gradient(left ,black,purple);
@@ -85,7 +85,7 @@ main{
     padding-top:5%;
     background: -webkit-linear-gradient(left ,purple,black);
     -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; 
 }
 
 @keyframes example{
@@ -115,70 +115,89 @@ main{
 .about{
     display:flex;
     justify-content: space-between;
-    width:90%;
+    width:100%;
     margin: auto;
-    margin-top:5%;
     background-color: #ddd;
-    border-radius:10px;
     
 }
 .box{
-    width:40%;
-    margin:2.5%;
-    margin-top:5%;
+    width:fit-content;
+    margin:auto;
+    padding: 5%;
+    
 }
-
+p{
+    font-size:1rem;
+}
 .container{
     
     display:flex;
     justify-content: space-between;
-    border-bottom:black solid 1px;
     font-size: larger;
 
+}
+
+.section{
+    margin-top:5%;
 }
 .section h1,.section-title h1{
     margin:auto;
     width:50%;
     background: -webkit-linear-gradient(left ,PURPLE,rgb(57, 84, 235));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .separator{
            font-size:large;
            
 }
-.block{
-    margin:4%;
-    padding:1.5%;
-    background-color:aliceblue;
+.block1{
+    margin: 2.5%;
+    padding: 1%;
+    background-color: #f1f4e9;
     border:#02353C solid 2px;
     border-radius:5%;
+    
 }
-.block:hover{
+.block1:hover{
     border:solid 2px rgb(48, 42, 42);
     border-radius:5%;
     transition: linear 0.5s;
     transform:scale(110%);
     box-shadow:3px 3px rgb(24, 23, 23);
 }
+
+.block2{
+    margin: 1%;
+    padding: 1%;
+    background-color: #f1f4e9;
+    border: #02353C solid 2px;
+    border-image: linear-gradient(to right, red ,purple, black);
+    border-image-slice: 1;
+    width: 20vw;
+
+}
+.block2:hover{
+    border:solid 2px rgb(48, 42, 42);
+    border-image: linear-gradient(to right, red ,purple, black);
+    border-image-slice: 1;
+    transition: linear 0.5s;
+    transform:scale(105%);
+    box-shadow:3px 3px black;
+}
+.table-title{
+margin-top:5%;
+}
 .table-container{
     border-bottom:black solid 1px;
     text-align: center;
 }
 .certificates{
-    display:flex;
+    display:inline-flex;
     justify-content: space-between;
-   
     font-size: larger;
 }
 
-.table{
-    margin:2.5%;
-    display:inline-block;
-    border:black solid 2px;
-    border-radius:2px;
-
-}
 
 .footer{
     background-color: darkslategray;
@@ -192,38 +211,50 @@ main{
     color:antiquewhite;
     text-decoration: none;
 }
-
 .table{
-    overflow: hidden;
+    width:30vw;
+    margin:3%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction:column;
+    border:grey solid 2px;
+    border-image: linear-gradient(to bottom right,blue ,purple,black);
+    border-image-slice: 1;
+
+}
+.table:hover{
+    border:grey solid 2px;
+    border-image: linear-gradient(to bottom right,blue,purple,black);
+    border-image-slice: 1;
+    box-shadow: black 3px 3px;
+    transform:scale(105%);
+    transition: 0.5s;
+    background-color: #f1f4e9;
+}
+.picture-section{
+    height: 30vh;
+    display: inline-block;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZioAW4QXDf5W0FdlYAVR7fDQ_YU87xnYkw&usqp=CAU);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZioAW4QXDf5W0FdlYAVR7fDQ_YU87xnYkw&usqp=CAU");
+    
+    
 }
 .list-unstyled{
-    transform: translatey(400px);
-    opacity: 0;
     text-align: left;
 }
-.table:hover .list-unstyled{
+.picture-section:hover {
 transform: translateY(0px);
 transition: 0.8s;
 opacity: 1;
 }
-.table:hover {
+.picture-section:hover {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZioAW4QXDf5W0FdlYAVR7fDQ_YU87xnYkw&usqp=CAU");
      background-size: 120% 120%;
      background-repeat: no-repeat;
      transition: 0.8s;
 }
-.table:hover h2{
-    color: white;
-    transition: 1s;
-}
 
-.table:hover h4{
-    color: white;
-    transition: 1s;
-}
 
 #back-to-top{
     display:none;
@@ -280,7 +311,7 @@ opacity: 1;
   
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
     
     .navbar{
         height:5%;
@@ -318,7 +349,7 @@ opacity: 1;
     .about{
         flex-direction:column;
         text-align:center;
-        margin-top:10%;
+        margin:auto;
     }
     .about video{
         height:75%;
@@ -333,9 +364,36 @@ opacity: 1;
     .certificates{
         flex-direction: column;
     }
+    .section{
+        margin-top:10%;
+
+    }
+    .section-title h1,.section h1{
+        width:90%;
+    }
+    .block1{
+        border-radius: 20px;
+    }
+    .block1:hover{
+        border-radius:20px;
+    }
+    .block1:hover,.block2:hover,.table:hover{
+        transform: scale(102%);
+        box-shadow: none;
+    }
+    .block2{
+        width:90%;
+        margin:4%;
+
+    }
     .table{
-        margin:10%;
-        margin-bottom: 5%;
+        width:90%;
+        margin:4%;
+        margin-bottom: 8%;
+    }
+    
+    .table-title {
+        margin-top: 10%;
     }
     #back-to-top{
         bottom: 5vh;
