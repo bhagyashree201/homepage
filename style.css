@@ -2,7 +2,7 @@ body{
     margin:0;
     overflow-x:hidden;
    background-image:linear-gradient(to bottom right,#02353C,#2EAF7D,#C1F6ED);
-   
+
     background-attachment: fixed;
     scroll-behavior: smooth;
     font-family:"raleway" ,sans-serif;
@@ -14,7 +14,7 @@ body{
     background-color: darkslategray;
     color:aliceblue;
     width:100%;
-    height:7%;
+    height:60px;
     justify-content: center ;
     vertical-align: middle;
     z-index:1000;
@@ -150,14 +150,13 @@ main{
 .block{
     margin:4%;
     padding:1.5%;
-    background-color:aliceblue;
-    border:#02353C solid 2px;
-    border-radius:5%;
+    background-color:rgba(240, 248, 255, 0.164);
+    border: radius 10px;;
 }
 .block:hover{
     border:solid 2px rgb(48, 42, 42);
     border-radius:5%;
-    transition: linear 0.5s;
+    transition: linear 0.2s;
     transform:scale(110%);
     box-shadow:3px 3px rgb(24, 23, 23);
 }
