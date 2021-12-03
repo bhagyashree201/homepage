@@ -20,14 +20,22 @@ body{
   font-family: "Open Sans", sans-serif;
 }
 
-a {
+ a {
   color: #f82249;
   transition: 0.3s;
 }
 
-a:hover,
-a:active,
-a:focus {
+#header a:hover,
+#header a:active,
+#header a:focus {
+  color: #f8234a;
+  outline: none;
+  text-decoration: none;
+}
+
+#intro a:hover,
+#intro a:active,
+#intro a:focus {
   color: #f8234a;
   outline: none;
   text-decoration: none;
@@ -88,7 +96,7 @@ h1{
 
 #header {
   height: 40px;
-  padding: 5px 0;
+  padding: 5px 5px;
   position: fixed;
   background-color: rgba(26, 25, 25, 0);
   left: 0;

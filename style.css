@@ -109,7 +109,7 @@ margin-top:5%;
 
 
 .footer{
-  background-color: darkslategray;
+  background-color: rgb(12, 12, 12);
   color:antiquewhite;
   padding:2%;
   text-align:center;
@@ -203,7 +203,6 @@ opacity: 1;
 
 @media screen and (max-width:800px){
   
-  
 
   
   main{
@@ -261,14 +260,177 @@ opacity: 1;
       margin:4%;
       margin-bottom: 8%;
   }
-  
+
   .table-title {
       margin-top: 10%;
   }
-    
-     
-   
-   
-    
+}
+
+
+
+
+
+
+
+
+
+
+
+@charset "UTF-8";
+.containerravi {
+    background: linear-gradient(to bottom, white 0%, whitesmoke 44%, whitesmoke 44%, white 100%);
+    background-size: cover;
+    position: relative;
+    border: none;
+    height: auto;
+    width: 100%;
+    color: #000;
+    padding: 0 4px 4px 4px;
+    margin: auto;
+}
+
+.team {
+    padding: 30px 0 40px;
+    margin-top: 60px;
+    width: 220px;
+    height: 280px;
+    background: rgb(196, 222, 236);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.team .photo {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.contactcards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width:950px)
+{.contactcards{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  margin: 5px;
+  align-items: center;
+}}
+
+@media screen and (max-width:480px)
+{.contactcards{
   
+  display: grid;
+  row-gap: 5px;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  margin: 0 5px;
+  align-items: center;
+}
+.team{
+  width: 90vw;
+  height: 250px;
+}}
+
+
+.horizontal{
+  width: 480px;
+  height: 5px;
+  background-color: red;
+}
+.blue .photo:before {
+    content: "";
+    width: 100%;
+    height: 0%;
+    border-radius: 50%;
+    background: #50cde3;
+    position: absolute;
+    bottom: 130%;
+    right: 0;
+    left: 0;
+    transform: scale(3);
+    transition: all .3s linear 0s;
+}
+.blue .photo:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.team:hover .photo:before {
+    height: 100%;
+}
+.team .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+.profile-txt {
+    margin-bottom: 30px;
+}
+.profile-txt .title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+}
+.profile-txt .position {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+}
+.social-icons {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #50cde3;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.6s ease;
+    
+}
+.social-icons li {
+    display: inline-block;
+}
+.social-icons li a {
+    display: block;
+    padding: 8px;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.social-icons li a:hover {
+    color: #50cde3;
+    background: #fff;
+}
+.team:hover .social-icons {
+    bottom: 0px;
+}
+.contactravi{
+    color: #1d1c1c;
+    text-align: center;
+    font-weight: bold;
+    background:linear-gradient(to bottom, white, whitesmoke);
 }
