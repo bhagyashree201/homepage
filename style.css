@@ -105,6 +105,21 @@ main{
   transition: 0.3s;
 
 }
+.block1 p, .block2 p{
+  font-size: 17px;
+  color: #555;
+}
+.block1:hover p, .block2:hover p{
+  color: #333;
+}
+.table li{
+  font-size: 16px;
+  color: #555;
+  transition: 0.2s;
+}
+.table:hover li{
+  color: #333;
+}
 .block2:hover{
   
   background: rgb(200,200,200);
