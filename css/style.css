@@ -341,7 +341,7 @@ h1{
   bottom: 0;
   z-index: 998;
   background: rgba(5, 5, 5, 0.9);
-  background: linear-gradient(to bottom, rgb(17, 17, 17),rgba(0, 0, 0, 0.705));
+  background: linear-gradient(to bottom, black,rgba(0, 0, 0, 0.705));
   left: -260px;
   width: 260px;
   overflow-y: auto;
