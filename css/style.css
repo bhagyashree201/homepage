@@ -48,8 +48,7 @@ h1{
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
-  padding: 0;
-  color: #0e1b4d;
+  
 }
 
 
@@ -62,6 +61,7 @@ h1{
   color: #fff;
   width: 40px;
   height: 40px;
+  z-index: 1000;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -429,7 +429,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #intro {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: url(../img/intro-bg.jpg) top center;
   background-size: cover;
@@ -488,7 +488,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
 }
 
-#intro .play-btn {
+/* #intro .play-btn {
   width: 94px;
   height: 94px;
   background: radial-gradient(#f82249 50%, rgba(101, 111, 150, 0.15) 52%);
@@ -560,7 +560,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-animation: none;
   animation: none;
   border-radius: 0;
-}
+} */
 
 #intro .about-btn {
   font-family: "Raleway", sans-serif;
@@ -583,7 +583,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #f82249;
   color: #fff;
 }
-
+/* 
 @-webkit-keyframes pulsate-btn {
   0% {
     -webkit-transform: scale(0.6, 0.6);
@@ -610,8 +610,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     transform: scale(1, 1);
     opacity: 0;
   }
-}
-
+} */
+/* 
 @media (min-width: 767px) {
   #subscribe input {
     min-width: 400px;
@@ -623,19 +623,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   #contact .contact-phone,
   #contact .contact-email {
     padding: 20px 0;
-  }
-
+  } */
+/* 
   #contact .contact-phone {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
   }
-}
-
+} */
+/* 
 @media (min-width: 991px) {
   #schedule .sub-heading {
     width: 75%;
   }
-}
+} */
 
 @media (min-width: 1024px) {
   #intro {
@@ -663,7 +663,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 801px) {
   #header {
-    width: 100vw;
    background-color: rgba(186, 194, 183, 0.925);
     /* background: linear-gradient(to bottom, rgba(26, 25, 25, 0.788), rgba(128, 128, 128, 0.178)); */
     height: 40px;
@@ -676,7 +675,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: rgb(208, 216, 205);
   /* background: linear-gradient(to bottom, rgb(120,120,120) 0%,rgba(100, 100, 100, 0.096) 100%); */
   height: 40px;
-  width: 100vw;
   padding: 5px 5px;
   transition: all 0.5s;
 }
@@ -700,49 +698,49 @@ body.mobile-nav-active #mobile-nav-toggle {
   #intro p {
     font-size: 16px;
   }
-
+/* 
   #schedule .nav-tabs a {
     padding: 8px 60px;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
   }
-
+/* 
   #faq #faq-list a {
     font-size: 18px;
   }
 
   #faq #faq-list i {
     top: 13px;
-  }
+  } */
 }
-
+/* 
 @media (max-width: 767px) {
   #schedule .nav-tabs a {
     padding: 8px 50px;
   }
-}
-
+} */
+/* 
 @media (max-width: 574px) {
   #venue .venue-info h3 {
     font-size: 24px;
   }
-}
-
+} */
+/* 
 @media (max-width: 480px) {
   #schedule .nav-tabs a {
     padding: 8px 30px;
   }
-}
-
+} */
+/* 
 @media (max-width: 460px) {
   #subscribe button {
     margin-top: 10px;
   }
-}
+} */
 @media (max-width: 991px) {
   #header #logo img {
     position: fixed;
