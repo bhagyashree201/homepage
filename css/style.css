@@ -663,6 +663,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 801px) {
   #header {
+    width: 100vw;
    background-color: rgba(186, 194, 183, 0.925);
     /* background: linear-gradient(to bottom, rgba(26, 25, 25, 0.788), rgba(128, 128, 128, 0.178)); */
     height: 40px;
@@ -675,6 +676,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: rgb(208, 216, 205);
   /* background: linear-gradient(to bottom, rgb(120,120,120) 0%,rgba(100, 100, 100, 0.096) 100%); */
   height: 40px;
+  width: 100vw;
   padding: 5px 5px;
   transition: all 0.5s;
 }

@@ -724,7 +724,7 @@ box-shadow: -15px -15px 15px rgba(255, 255, 255,0.3),
 .megatext h1{
   font-weight: 600;
   
-  background: -webkit-linear-gradient(left ,rgb(148, 3, 3) 0%,rgb(148, 3, 3) 50%,rgb(22, 22, 22) 50%,rgb(22, 22, 22) 50%);
+  background: -webkit-linear-gradient(left ,rgb(148, 3, 3) 0%,rgb(148, 3, 3) 64%,rgb(22, 22, 22) 64%,rgb(22, 22, 22) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
