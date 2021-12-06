@@ -99,6 +99,9 @@ h1{
   transition: all 0.5s;
   z-index: 997;
 }
+.containerr{
+  padding-right: 18px;
+}
 /* 
 #header.header-scrolled,
 #header.header-fixed {
@@ -134,7 +137,7 @@ h1{
   margin: 10px;
   position: fixed;
   top: -11px;
-  left: 6px;
+  left: 0px;
   max-height: 40px;
 }
 
@@ -166,6 +169,11 @@ h1{
 
 .nav-menu > li {
   float: left;
+}
+#lastli{
+  width: 8px;
+  height: 2px;
+  margin-right: 8px;
 }
 
 .nav-menu li:hover > ul,
@@ -278,6 +286,8 @@ h1{
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   background: #fff;
   border-radius: 3px;
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .nav-menu ul li {
@@ -323,7 +333,7 @@ h1{
 #mobile-nav-toggle i {
   color: rgb(23, 25, 26);
   
-  padding: 0 25px 0 0;
+  padding: 0 5px 0 0;
   margin: 0 5px 0 0;
 }
 
@@ -606,7 +616,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-@media (min-width: 767px) {
+/* @media (min-width: 767px) {
   #subscribe input {
     min-width: 400px;
   }
@@ -629,7 +639,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #schedule .sub-heading {
     width: 75%;
   }
-}
+} */
 /* 
 @media (min-width: 1024px) {
   #intro {
@@ -654,7 +664,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 10px 4px;
   }
 }
-
+@media screen and (max-width:800px){
+  .containerr{
+    padding-right: 10px;
+  }
+}
 @media (max-width: 801px) {
   #header {
    background-color: rgba(186, 194, 183, 0.925);
